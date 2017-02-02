@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Chat </title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="container">
+
+    <h1>Simple Chat</h1>
+    <div class="row">
+        <div class="col-sm-10">
+            <ul id="messages"></ul>
+        </div>
+        <div class="col-sm-2">
+            <ul id="userList" class="list-group text-center"></ul>
+        </div>
+    </div>
+    <div class="row navbar-fixed-bottom">
+        <div class="col-sm-12">
+            <div class="input-group form-group-lg">
+                <input type="text" class="form-control" placeholder="Введите сообщение..." id="messageBox"/>
+                <span class="input-group-btn">
+                <input type="button" class="btn btn-lg btn-success" id="sendMessage" value="Отправить"/>
+            </span>
+            </div><!-- /input-group -->
+        </div>
+    </div>
+</div>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.2.1.min.js"></script>
+<script src="signalr/hubs"></script>
+<script src="chat.js"></script>
+</body>
+</html>
